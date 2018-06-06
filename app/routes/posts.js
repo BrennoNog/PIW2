@@ -1,4 +1,5 @@
 let controller = require("../controllers/posts.js");
+let auth = require('../controllers/auth.js')
 
 module.exports = function(app){
     app.get("/api/posts", controller.listaPosts);
