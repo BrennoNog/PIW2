@@ -11,7 +11,8 @@ module.exports = function(){
         },
         user:{
             type:mongoose.Schema.ObjectId,
-            ref: 'User'
+            ref: 'User',
+            required: true
         }
     });
     return mongoose.model('post',schema);
